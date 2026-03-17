@@ -1,0 +1,265 @@
+@media (min-width: 576px) {
+  /* Start sec3 */
+  #sec3 .leftContent .card .ranges .range .two {
+    width: 84%;
+  }
+
+  #sec3 .leftContent .card .ranges .range .one,
+  #sec3 .leftContent .card .ranges .range .three {
+    width: 8%;
+  }
+  /* End sec3 */
+}
+
+/****************************************************/
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 2%;
+  }
+
+  /* Start sec2 */
+  #sec2 .tableContainer table {
+    width: 100%;
+  }
+
+  #sec2 .tableContainer table tfoot tr td {
+    padding: 20px;
+  }
+  /* End sec2 */
+
+  /* Start sec4 */
+  #sec4 {
+    padding-inline: calc(2% - 10px);
+  }
+  #sec4 .boxes {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+  }
+
+  #sec4 .boxes .box {
+    padding: 20px 10px;
+    color: #333;
+    width: 50%;
+  }
+
+  #sec4 .boxes .box .inner {
+    height: 100%;
+  }
+  /* End sec4 */
+
+  /* Start Footer */
+  .footer .boxes {
+    flex-flow: wrap row;
+    gap: 20px 0px;
+  }
+
+  .footer .boxes .box {
+    width: 50%;
+    flex-shrink: 0;
+  }
+
+  .footer .bottom {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 30px;
+  }
+
+  .footer .bottom p {
+    margin-block: 0px;
+  }
+
+  /* End Footer */
+}
+
+/****************************************************/
+
+@media (min-width: 992px) {
+  .container {
+    padding-inline: 2.2%;
+  }
+
+  /* Start Navbar */
+  .navbar .links {
+    display: block;
+  }
+
+  .navbar .links ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .navbar .links ul li a {
+    color: #46455b;
+    position: relative;
+  }
+
+  .navbar .links ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #8a36fe;
+    border-radius: 9999px;
+    transition: all 0.5s;
+  }
+
+  .navbar .links ul li a.active::after {
+    width: 100%;
+  }
+
+  .navbar .links ul li a.active,
+  .navbar .links a:hover {
+    color: #9c53fe;
+  }
+
+  .navbar .links ul li a:hover::after {
+    width: 100%;
+  }
+  /* End Navbar */
+
+  /* Start sec1 */
+  #sec1 {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    gap: 0px;
+  }
+
+  #sec1 .left,
+  #sec1 .right {
+    width: 48%;
+  }
+  /* End sec1 */
+
+  /* Start sec3 */
+  #sec3 .flex {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    gap: 0px;
+    justify-content: space-between;
+  }
+
+  #sec3 .flex .leftContent {
+    width: 30%;
+    position: sticky;
+    top: 100px;
+  }
+
+  #sec3 .flex .rightContent {
+    width: 65%;
+  }
+
+  #sec3 .flex .leftContent .card {
+    padding: 30px;
+  }
+
+  #sec3 .flex .leftContent .card .ranges .range .one,
+  #sec3 .flex .leftContent .card .ranges .range .three {
+    width: 15%;
+  }
+
+  #sec3 .flex .leftContent .card .ranges .range .two {
+    width: 65%;
+  }
+  /* End sec3 */
+
+  /* Start sec4 */
+  #sec4 {
+    padding-inline: calc(2.2% - 10px);
+  }
+
+  #sec4 .boxes .box {
+    width: calc(100% / 3);
+  }
+  /* End sec4 */
+
+  /* Start Footer */
+  .footer .boxes {
+    flex-flow: wrap row;
+    gap: 20px 0px;
+    padding-bottom: 50px;
+  }
+
+  .footer .boxes .box-1 {
+    padding-right: 20px;
+  }
+
+  .footer .boxes .box {
+    width: 25%;
+    flex-shrink: 0;
+  }
+  /* End Footer */
+}
+
+/****************************************************/
+
+@media (min-width: 1200px) {
+  .container {
+    padding-inline: 5%;
+  }
+
+  /* Start sec3 */
+  #sec3 {
+    padding-block: 80px;
+  }
+
+  #sec3 .flex .leftContent {
+    width: 32%;
+  }
+
+  #sec3 .flex .rightContent {
+    width: 63%;
+  }
+
+  #sec3 .flex .leftContent .card .ranges .range .one,
+  #sec3 .flex .leftContent .card .ranges .range .three {
+    width: 10%;
+  }
+
+  #sec3 .flex .leftContent .card .ranges .range .two {
+    width: 75%;
+  }
+  /* End sec3 */
+
+  /* Start sec4 */
+  #sec4 {
+    padding-inline: calc(5% - 10px);
+  }
+
+  #sec4 .boxes .box {
+    width: calc(100% / 4);
+    padding: 0px 10px;
+  }
+  /* End sec4 */
+}
+
+/****************************************************/
+
+@media (min-width: 1400px) {
+  .container {
+    padding-inline: 10%;
+  }
+
+  /* Start sec1 */
+  #sec1 {
+    padding-block: 150px 90px;
+  }
+
+  #sec1 .left,
+  #sec1 .right {
+    height: 550px;
+  }
+  /* End sec1 */
+  
+
+  /* Start sec4 */
+  #sec4 {
+    padding-inline: calc(10% - 10px);
+  }
+  /* End sec4 */
+}
