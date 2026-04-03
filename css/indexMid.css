@@ -33,7 +33,12 @@
     padding-inline: calc(2% - 10px);
   }
   #sec4 .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin-bottom: 30px;
   }
@@ -51,18 +56,29 @@
 
   /* Start Footer */
   .footer .boxes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: wrap row;
     flex-flow: wrap row;
     gap: 20px 0px;
   }
 
   .footer .boxes .box {
     width: 50%;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
   }
 
   .footer .bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-block: 30px;
   }
@@ -87,7 +103,11 @@
   }
 
   .navbar .links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 30px;
   }
@@ -106,6 +126,8 @@
     height: 2px;
     background-color: #8a36fe;
     border-radius: 9999px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
   }
 
@@ -125,7 +147,12 @@
 
   /* Start sec1 */
   #sec1 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     gap: 0px;
   }
@@ -138,9 +165,16 @@
 
   /* Start sec3 */
   #sec3 .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     gap: 0px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -180,6 +214,9 @@
 
   /* Start Footer */
   .footer .boxes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: wrap row;
     flex-flow: wrap row;
     gap: 20px 0px;
     padding-bottom: 50px;
@@ -191,6 +228,7 @@
 
   .footer .boxes .box {
     width: 25%;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
   }
   /* End Footer */
@@ -255,7 +293,6 @@
     height: 550px;
   }
   /* End sec1 */
-  
 
   /* Start sec4 */
   #sec4 {
